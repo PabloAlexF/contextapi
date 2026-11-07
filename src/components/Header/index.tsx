@@ -3,10 +3,10 @@ import {FiShoppingCart} from "react-icons/fi"
 
 export function Header () {
     return (
-        <header className="w-full px-1 bg-slate-200">
+        <header className="w-full px-1 bg-slate-200 md: grid-cols-2 lg:grid-cols-5">
             <nav className="w-full max-w-7xl h-14 flex items-center justify-between px-5 mx-auto">
                 <Link className="font-bold text-2xl" to="/">
-                    <p>DevShop</p>
+                    <p>Imprass</p>
                 </Link>
 
                 <Link className="relative" to="/cart">
