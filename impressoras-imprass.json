@@ -1,0 +1,122 @@
+
+{
+  "products": [
+    {
+      "id": 1,
+      "brand": "Brother",
+      "category": "Multifuncional Laser",
+      "title": "Impressora Multifuncional Brother Dcp-8157dn 127v (Recondicionado)",
+      "description": "A Multifuncional Brother DCP-8157DN é uma impressora a laser monocromática de alta velocidade, voltada para escritórios e grande volume de trabalho.",
+      "price": 950.00,
+      "cover": "https://http2.mlstatic.com/D_NQ_NP_2X_968934-MLB92393163057_092025-F-impressora-multifuncional-brother-dcp8157dn-127v.webp"
+    },
+    {
+      "id": 2,
+      "brand": "Brother",
+      "category": "Multifuncional Laser",
+      "title": "Multifuncional Brother Laser Monocromática MFC-L6902DW com Wi-Fi - Excelente (Recondicionado)",
+      "description": "Conheça a Brother MFC-L6902DW, uma multifuncional laser monocromática voltada para escritórios que buscam eficiência e alta produtividade.",
+      "price": 1950.00,
+      "cover": "https://http2.mlstatic.com/D_NQ_NP_905393-MLA110417379675_042026-O.webp"
+    },
+    {
+      "id": 3,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Multifuncional Epson EcoTank L5590",
+      "description": "Multifuncional colorida com tanque de tinta, conectividade USB, Wi-Fi e recursos para atender diferentes necessidades domésticas e profissionais.",
+      "price": 1804.00,
+      "cover": "https://http2.mlstatic.com/D_NQ_NP_2X_614039-MLU54982554898_042023-F.webp"
+    },
+    {
+      "id": 4,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Epson L3110 Seminova Multifuncional Color Bivolt (Usado)",
+      "description": "Epson L3110 seminova, multifuncional colorida com sistema EcoTank, indicada para uso doméstico e pequenos escritórios.",
+      "price": 950.00,
+      "cover": "https://http2.mlstatic.com/D_NQ_NP_2X_614039-MLU54982554898_042023-F.webp"
+    },
+    {
+      "id": 5,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Multifuncional EcoTank Pro L6370 Wireless, Bivolt",
+      "description": "EcoTank L6370, multifuncional com tanque de tinta, conectividade sem fio e recursos voltados para produtividade em ambientes profissionais.",
+      "price": 2395.00,
+      "cover": "https://http2.mlstatic.com/D_Q_NP_975090-MLB116317534313_082026-F-multifuncional-ecotank-pro-l6370--wireless-bivolt.webp"
+    },
+    {
+      "id": 6,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Multifuncional Colorida EcoTank Epson L6490 Wi-Fi Preto",
+      "description": "Multifuncional colorida EcoTank com conectividade Wi-Fi, indicada para residências e escritórios que necessitam de impressões de qualidade.",
+      "price": 3280.00,
+      "cover": "https://http2.mlstatic.com/D_NQ_NP_2X_661333-MLA99966516797_112025-F.webp"
+    },
+    {
+      "id": 7,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Multifuncional Epson EcoTank L3250",
+      "description": "Multifuncional colorida com tanque de tinta, conexão Wi-Fi, Wi-Fi Direct e USB. Ideal para residências e pequenos escritórios.",
+      "price": 1349.99,
+      "cover": "https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/oficinadosbits/media/uploads/produtos/foto/fumyuxyk/file.png"
+    },
+    {
+      "id": 8,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Multifuncional Epson EcoTank L4260",
+      "description": "Multifuncional EcoTank colorida com impressão frente e verso automática, Wi-Fi e USB. Indicada para uso doméstico e profissional.",
+      "price": 1399.00,
+      "cover": "https://images.kabum.com.br/produtos/fotos/228879/impressora-multifuncional-epson-ecotank-l4260-jato-de-tinta-colorida-wifi-wireless-visor-lcd-usb-bivolt-preto-c11cj63302_1635343802_gg.jpg"
+    },
+    {
+      "id": 9,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Multifuncional Epson EcoTank L6270",
+      "description": "Multifuncional tanque de tinta com impressão duplex automática, alimentador automático de documentos, Wi-Fi e Ethernet.",
+      "price": 2688.88,
+      "cover": "https://images.kabum.com.br/produtos/fotos/309876/impressora-multifuncional-epson-ecotank-l6270-jato-de-tinta-wifi-wireless-ethernet-duplex-automatico-preto-c11cj61302_1645818214_gg.jpg"
+    },
+    {
+      "id": 10,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Multifuncional Epson EcoTank L5290",
+      "description": "Multifuncional colorida com tanque de tinta, alimentador automático de documentos, Wi-Fi, Ethernet e função de fax.",
+      "price": 1900.00,
+      "cover": "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51l-4apUYdL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 11,
+      "brand": "Epson",
+      "category": "Impressora Fotográfica",
+      "title": "Impressora Fotográfica Epson EcoTank L8050",
+      "description": "Impressora fotográfica com sistema de tanque de tinta de seis cores, Wi-Fi e USB. Desenvolvida para impressão de fotografias.",
+      "price": 3500.00,
+      "cover": "https://images.kabum.com.br/produtos/fotos/415840/impressora-fotografica-epson-ecotank-l8050-colorida-wi-fi-usb-preto-c11ck37302_1675112147_gg.jpg"
+    },
+    {
+      "id": 12,
+      "brand": "Epson",
+      "category": "Impressora Monocromática",
+      "title": "Impressora Multifuncional Epson EcoTank M2170",
+      "description": "Multifuncional monocromática com tanque de tinta, impressão frente e verso automática, Wi-Fi e Ethernet.",
+      "price": 1734.99,
+      "cover": "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/51VibdCWl1L._AC_SY300_SX300_QL70_ML2_.jpg"
+    },
+    {
+      "id": 13,
+      "brand": "Epson",
+      "category": "Multifuncional Tanque de Tinta",
+      "title": "Impressora Multifuncional Epson EcoTank L4360",
+      "description": "Multifuncional colorida com tanque de tinta, impressão frente e verso automática e conectividade sem fio.",
+      "price": 1349.00,
+      "cover": "https://images.kabum.com.br/produtos/fotos/997063/multifuncional-epson-ecotank-l4360-wi-fi-direct-frente-e-verso-automatico_1782413816_gg.jpg"
+    }
+  ]
+}

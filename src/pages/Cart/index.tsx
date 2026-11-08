@@ -1,4 +1,16 @@
+const produtos = [
+    {
+        "id": 1,
+        "title": "Impressora Multifuncional Brother Dcp-8157dn 127v (Recondicionado)",
+        "description": "A Multifuncional Brother DCP-8157DN é uma impressora a laser monocromática de alta velocidade, voltada para escritórios e grande volume de trabalho.",
+        "price": 950.00,
+        "cover": "https://http2.mlstatic.com/D_NQ_NP_2X_968934-MLB92393163057_092025-F-impressora-multifuncional-brother-dcp8157dn-127v.webp"
+    }
+]
+
 export function Cart() {
+    
+
   return (
     <div className="w-full max-w-full mx-auto">
       <h1 className="font-medium text-2xl text-center my-4">
