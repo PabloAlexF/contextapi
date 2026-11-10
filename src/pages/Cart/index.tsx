@@ -1,38 +1,56 @@
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 
 export function Cart() {
-    
+  const { cart } = useContext(CartContext);
 
   return (
-    <div className="w-full max-w-full mx-auto">
-      <h1 className="font-medium text-2xl text-center my-4">
-        Carrinho de compras
-      </h1>
+    <div className="min-h-screen bg-slate-50 text-slate-800">
+      <div className="max-w-4xl mx-auto px-4 py-10">
+        <h1 className="text-2xl font-semibold text-center mb-8">
+          Carrinho de compras
+        </h1>
 
-      <section className="flex items-center justify-between border-b-2 border-gray-300">
-        <img
-          className="w-full rounded-lg max-w-70 mb-2 "
-          src="https://http2.mlstatic.com/D_NQ_NP_2X_968934-MLB92393163057_092025-F-impressora-multifuncional-brother-dcp8157dn-127v.webp"
-          alt="imagem impressora brother 8157"
-        />
+        {cart.map((item) => (
+          <section key={item.id} className="flex flex-col sm:flex-row items-center gap-4 border border-slate-200 bg-white rounded-2xl p-4 shadow-sm">
+            <img
+              className="w-28 h-28 object-cover rounded-xl"
+              src={item.cover}
+              alt={item.title}
+            />
 
-        <strong>R$1000</strong>
+            <div className="flex-1">
+              <p className="font-medium text-lg">{item.title}</p>
+              <p className="text-sm text-slate-500 mt-1">Produto em estoque</p>
+            </div>
 
-        <div className="flex items-center justify-center gap-3">
-          <button className="bg-slate-600 px-2 rounded text-white font-medium flex items center justify-center">
-            -
-          </button>
-          2
-          <button className="bg-slate-600 px-2 rounded text-white font-medium flex items center justify-center">
-            +
-          </button>
+            <strong className="text-lg font-semibold text-slate-800">
+              R$ {item.price}
+            </strong>
+
+            <div className="flex items-center gap-3 border border-slate-200 rounded-full px-2 py-1">
+              <button className="w-8 h-8 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                -
+              </button>
+
+              <span className="text-sm font-medium">{item.amount}</span>
+
+              <button className="w-8 h-8 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 transition">
+                +
+              </button>
+            </div>
+
+            <strong className="text-base font-semibold text-slate-800">
+              Subtotal: R$ {item.total}
+            </strong>
+          </section>
+        ))}
+
+        <div className="mt-8 flex items-center justify-between border-t border-slate-200 pt-5">
+          <p className="text-lg text-slate-600">Total</p>
+          <p className="text-2xl font-bold text-slate-900">R$ 1000,00</p>
         </div>
-
-        <strong className="float-right">
-            SubTotal: R$1000
-        </strong>
-      </section>
-
-      <p className="font-bold mt-4">Total: R$1000,00</p>
+      </div>
     </div>
   );
 }
