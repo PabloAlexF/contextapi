@@ -34,47 +34,58 @@ export function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <main className="w-full max-w-7xl px-4 mx-auto py-10">
-        <h1 className="font-bold text-2xl mb-8 text-center text-gray-800">
-          Produtos Disponíveis
-        </h1>
+    <div className="min-h-screen bg-slate-50 text-slate-800">
+      <main className="w-full max-w-7xl px-4 mx-auto py-12">
+        <header className="mb-10 text-center">
+          <span className="inline-block px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-xs font-medium tracking-[0.12em] uppercase mb-4">
+            Loja
+          </span>
+          <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
+            Produtos Disponíveis
+          </h1>
+        </header>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-5">
           {products.map((prodocut) => (
             <section
               key={prodocut.id}
-              className="w-full h-full flex flex-col bg-white border border-gray-200 rounded-xl p-4 hover:shadow-md transition-shadow duration-200"
+              className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
             >
-              <img
-                className="w-full h-48 object-contain rounded-lg mb-4"
-                src={prodocut.cover}
-              />
+              <div className="mb-4 overflow-hidden rounded-xl bg-slate-100">
+                <img
+                  className="h-48 w-full object-contain transition-transform duration-300 group-hover:scale-105"
+                  src={prodocut.cover}
+                  alt={prodocut.title}
+                />
+              </div>
 
-              <h2 className="font-semibold text-base text-gray-800 mb-2">
-                {prodocut.title}
-              </h2>
+              <div className="mb-3">
+                <p className="text-[11px] font-medium uppercase tracking-[0.12em] text-slate-400">
+                  {prodocut.brand}
+                </p>
+                <h2 className="mt-2 text-base font-semibold text-slate-800 line-clamp-2">
+                  {prodocut.title}
+                </h2>
+              </div>
 
-              <h3 className="text-sm text-gray-500 mb-3 line-clamp-3">
+              <p className="mb-4 text-sm leading-6 text-slate-500 line-clamp-3">
                 {prodocut.description}
-              </h3>
+              </p>
 
-              <h3 className="text-xs font-medium text-gray-400 mb-4">
-                {prodocut.brand}
-              </h3>
-
-              <div className="flex items-center justify-between border-t border-gray-100 pt-4 mt-auto">
-                <strong className="text-lg font-bold text-gray-800">
+              <div className="mt-auto flex items-center justify-between border-t border-slate-100 pt-4">
+                <strong className="text-lg font-bold text-slate-900">
                   {prodocut.price.toLocaleString("pt-BR", {
                     style: "currency",
                     currency: "BRL",
                   })}
                 </strong>
+
                 <button
                   onClick={() => handleAddCartItem(prodocut)}
-                  className="bg-gray-900 text-white p-2.5 rounded-lg hover:bg-gray-700 transition-colors duration-200"
+                  className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-900 text-white transition-colors duration-200 hover:bg-slate-700"
+                  aria-label={`Adicionar ${prodocut.title} ao carrinho`}
                 >
-                  <BsCartPlus size={20} />
+                  <BsCartPlus size={18} />
                 </button>
               </div>
             </section>

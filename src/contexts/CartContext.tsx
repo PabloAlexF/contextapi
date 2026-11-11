@@ -56,6 +56,20 @@ function CartProvider({ children }: cartProviderProps) {
     setCart((products) => [...products, data]);
   }
 
+
+  function removeItemCart(product: CartProps) {
+
+    const indexItem = cart.findIndex(item => item.id === product.id)
+
+    if(cart[indexItem]?.amount > 1) {
+      //diminuir apenas 1 do amount que voce tem
+    }
+
+    const removeItem = cart.filter(item => item.id !== product.id )
+    setCart(removeItem)
+
+  }
+
   return (
     <CartContext.Provider
       value={{ cart, CartAmount: cart.length, addItemCart }}
